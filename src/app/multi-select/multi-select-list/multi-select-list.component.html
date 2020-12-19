@@ -1,0 +1,6 @@
+<ul class="multiselect-list" scrollTracker (scrollingFinished)="onScrollingFinished()">
+  <li *ngFor="let category of categories; let idx=index"  class="multiselect-list--option">
+    <input type="checkbox" id="{{ category }}" tabindex="{{ idx + 1 }}"/>
+    <label for="{{ category }}">{{ category }}</label>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+<div scrollTracker (scroll)="onScrollingFinished()">
+  <h3>Categories</h3>
+  <input type="text" placeholder="Search..." class="multiselect-form--search" tabindex="0"/>
+  <app-multi-select-list [categories]="categories$ | async" (scrollingFinished)="onScrollingFinished()">
+  </app-multi-select-list>
+  <button class="btn-primary--large" (click)="loadMore()">Load more</button>
+</div>
+
